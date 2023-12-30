@@ -3,8 +3,10 @@ from data import question_data
 from quiz_brain import QuizBrain
 from ui import QuizInterface
 
-
+# Creates an empty list we will pass to the QuizBrain object we create later in the program
 question_bank = []
+# for loop that pulls the question and answer from the question_data dictionary from the data class, creates a Question object using that
+# Then adds that question to the question bank list
 for question in question_data:
     question_text = question["question"]
     question_answer = question["correct_answer"]
